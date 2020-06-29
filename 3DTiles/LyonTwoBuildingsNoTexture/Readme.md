@@ -13,6 +13,7 @@ ls junk/
 i.e. the resulting tile-set will be located in the junk subdirectory.
 
 Here are the some visuals
+
 <img src="Doc/LyonTwoBuildingsNoTexture_second.png" alt="from above" width="400"/>
 
 <img src="Doc/LyonTwoBuildingsNoTexture_first.png" alt="from side" width="400"/>
