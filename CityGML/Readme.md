@@ -35,6 +35,10 @@ out of [Lyon open data](https://data.grandlyon.com/accueil)
   cp LYON_1ER_2015/LYON_1ER_BATI_2015_Appearance/69381AB133.jpg ./LYON_1ER_BATI_2015_small_house.jpg
   ```
 
+### Concerning the LYON_2EME_BATI_2015_small_house example
+<img src="LYON_2EME_BATI_2015_small_house_render_without_texture.png" alt="without texture" width="300"/>
+<img src="LYON_2EME_BATI_2015_small_house_render.png" alt="without texture" width="400"/>
+
 ### FZKHaus Example
 
 ![FZKHaus](FZKHaus.png)
