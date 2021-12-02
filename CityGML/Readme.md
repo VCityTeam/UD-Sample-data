@@ -44,7 +44,7 @@ out of [Lyon open data](https://data.grandlyon.com/accueil)
 
 <img src="hotel_de_ville_dataset.png" alt="without texture" width="800"/>
 
-[This folder](./LYON_1ER_BATI_2009-2018_hotel_de_ville) contains 4 small datasets created using the method proposed [in the previous section](#Concerning-the-LYON_1ER_BATI_2015_small_house-example) but without any texture or appearance data. These datasets feature several remarkable buildings around the [Place des Terreaux](https://en.wikipedia.org/wiki/Place_des_Terreaux) in Lyon, France from 2009-2018.
+[This folder](./LYON_1ER_BATI_2009-2018_hotel_de_ville) contains 4 small datasets created using the method proposed [in the previous section](#Concerning-the-LYON_1ER_BATI_2015_small_house-example) but without any texture or appearance data. These datasets feature several remarkable buildings around the [Hôtel de Ville](https://en.wikipedia.org/wiki/H%C3%B4tel_de_Ville,_Lyon) of Lyon, France from 2009-2018.
 
 These datasets in CityGML 3.0 can be found [here](../CityGMLv3.0).
 
