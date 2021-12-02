@@ -39,17 +39,19 @@ out of [Lyon open data](https://data.grandlyon.com/accueil)
 <img src="LYON_2EME_BATI_2015_small_house_render_without_texture.png" alt="without texture" width="300"/>
 <img src="LYON_2EME_BATI_2015_small_house_render.png" alt="without texture" width="400"/>
 
+
+### Lyon Hôtel de Ville datasets
+
+<img src="hotel_de_ville_dataset.png" alt="without texture" width="800"/>
+
+[This folder](./LYON_1ER_BATI_2009-2018_hotel_de_ville) contains 4 small datasets created using the method proposed [in the previous section](#Concerning-the-LYON_1ER_BATI_2015_small_house-example) but without any texture or appearance data. These datasets feature several remarkable buildings around the [Place des Terreaux](https://en.wikipedia.org/wiki/Place_des_Terreaux) in Lyon, France from 2009-2018.
+
+These datasets in CityGML 3.0 can be found [here](../CityGMLv3.0).
+
+
 ### FZKHaus Example
 
 <img src="FZKHaus.png" alt="without texture" width="400"/>
 
-This is a simple non textured CityGML 2.0 example a house, taken from the [tum-gis/citygml2-to-citygml3](https://github.com/tum-gis/citygml2-to-citygml3) Github repository.
-A version of this file in CityGML 3.0 is also located [here](../CityGMLv3.0/).
-
-
-### LYON 1ER remarkable datasets
-
-<img src="Place_des_Terreaux_dataset.png" alt="without texture" width="800"/>
-
-[This folder](./LYON_1ER_BATI_2009-2018_remarkables) contains 4 small datasets created using the method proposed [in the previous section](#Concerning-the-LYON_1ER_BATI_2015_small_house-example) but without any texture or appearance data. These datasets feature several remarkable buildings around the [Place des Terreaux](https://en.wikipedia.org/wiki/Place_des_Terreaux) in Lyon, France from 2009-2018.
-
+This is a simple non textured CityGML 2.0 example a house, taken from the [tum-gis/citygml2-to-citygml3](https://github.com/tum-gis/citygml2-to-citygml3/tree/master/input) Github repository.
+A version of this file in CityGML 3.0 is also located in the [OGC CityGML 3.0 Encoding Github](https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Building) alongside several other examples.
