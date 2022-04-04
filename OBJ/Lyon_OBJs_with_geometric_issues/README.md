@@ -3,13 +3,13 @@
 Use the branch [filter_ids](https://github.com/VCityTeam/py3dtilers/tree/filter_ids) of py3dtilers to target the CityObjects.
 
 ```bash
-py3dtilers --type <type> --obj <output_obj_name> --ids <cityobject_ids>
+citygml-tiler --type <type> --obj <output_obj_name> --ids <cityobject_ids>
 ```
 
 Example:
 
 ```bash
-py3dtilers --type building --obj tour_part_dieu --ids 69383AR8
+citygml-tiler --type building --obj tour_part_dieu --ids 69383AR8
 ```
 
 ## tour_part_dieu
