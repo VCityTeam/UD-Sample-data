@@ -115,3 +115,25 @@ Data after treatment
 * Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
 * cityobject_id: gml_f61667a0-435c-4d2f-973b-8b6d916fa9f9  
 * CityGML type: relief  
+
+## Building the 3dCityDB for running the tiler
+
+References are 
+
+* [docker usage of 3dCityDB](https://3dcitydb-docs.readthedocs.io/en/latest/3dcitydb/docker.html#usage-and-configuration)
+* [docker usage of importer/exporter](https://3dcitydb-docs.readthedocs.io/en/latest/impexp/docker.html)
+
+```bash
+# Download the data
+wget https://download.data.grandlyon.com/files/grandlyon/imagerie/2018/maquette/LYON_2EME_2018.zip
+unzip LYON_2EME_2018.zip
+# Start the 3dCity data base
+docker network create citydb-net
+docker run --name citydbTemp -p 5432:5432 -dt --network citydb-net -e "CITYDBNAME=citydb" -e "SRID=3946" -e "GMLSRSNAME=espg:3946" -e "POSTGRES_USER=postgres" -e "POSTGRES_PASSWORD=postgres" 3dcitydb/3dcitydb-pg
+# Import the data
+docker run --rm --name 3dcitydb-impexp -t --network citydb-net -e CITYDB_TYPE=postgresql -v $(pwd):/data 3dcitydb/impexp import -H citydbTemp -d postgres -u postgres -p postgres /data/LYON_2EME_2018/LYON_2EME_BATI_2018.gml
+# Assert the importation ran smoothly
+export PGPASSWORD=postgres
+query='SELECT COUNT(*) FROM citydb.cityobject;'
+psql -h localhost -p 5432 -U postgres -d postgres -c "$query"
+```
