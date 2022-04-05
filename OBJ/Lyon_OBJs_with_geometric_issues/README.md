@@ -12,58 +12,106 @@ Example:
 citygml-tiler --type building --obj tour_part_dieu --ids 69383AR8
 ```
 
-## tour_part_dieu
+## Part Dieu tower building
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: 69383AR8  
-type: building  
-problème: surfaces manquantes  
+<img src="tour_part_dieu_scene_view.png" alt="tour_part_dieu_scene_view" width="200"/>
 
-## palais_de_justice
+* Problem: missing surfaces (after py3dTilers treatment)
+* [Obj file](tour_part_dieu.obj)
+* source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
+* cityobject_id: 69383AR8  
+* CityGML type: building
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: 69385AH128  
-type: building  
-problème: surfaces manquantes  
+## Palais de justice
 
-## cloche_hopital_charite
+<img src="palais_de_justice_scene_view.png" alt="palais_de_justice_scene_view" width="400"/>
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: 69382PUBLIC10  
-type: building  
-problème: surfaces manquantes + lié à un autre bâtiment  
+* Problem: missing surfaces (after py3dTilers treatment)
+* [Obj file](palais_de_justice.obj)
+* source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
+* cityobject_id: 69385AH128  
+* CityGML type: building
 
-## ensemble_de_batiments_1
+## Charity hospital bell tower
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: 69388CI75  
-type: building  
-problème: bâtiments distincts liés en une entité  
+<img src="cloche_hopital_charite_scene_view.png" alt="palais_de_justice_scene_view" width="200"/>
 
-## ensemble_de_batiments_2
+* Problem: missing surfaces (after py3dTilers treatment) and also two
+  geometrical buildings in one logical descriptor (refer below for details)
+* [Obj file](cloche_hopital_charite.obj)
+* Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)
+* cityobject_id: 69382PUBLIC10  
+* CityGML type: building
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
+## Building set 1
+
+<img src="ensemble_de_batiments_1_scene_view.png" alt="ensemble_de_batiments_1_scene_view" width="400"/>
+
+* Problem: two geometrically distinct buildings erroneously regrouped in
+  a single logical descriptor
+* [Fichier obj](ensemble_de_batiments_1.obj)
+* source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)
+* cityobject_id: 69388CI75
+* CityGML type: building  
+
+## Building set 2
+
+<img src="ensemble_de_batiments_2_scene_view.png" alt="ensemble_de_batiments_1_scene_view" width="400"/>
+
+* Problem: two geometrically distinct buildings erroneously regrouped in
+  a single logical descriptor
+* [Obj file](ensemble_de_batiments_2.obj)
+* source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
 cityobject_id: 69388AW117  
-type: building  
-problème: bâtiments distincts liés en une entité  
+* CityGML type: building  
 
-## extrait_terrain_lyon_2
+## Building set 3
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: gml_38179d6d-9886-48a9-9634-4e5eb1016a06  
-type: relief  
-problème: normales inversées + surfaces manquantes  
+<img src="ensemble_de_batiments_3_cloche_hopital_charite_scene_view.png" alt="ensemble_de_batiments_3_cloche_hopital_charite_scene_view" width="400"/>
 
-## extrait_1_terrain_lyon_5
+* Problem: two geometrically distinct buildings erroneously regrouped in
+  a single logical descriptor triggers a scale fusing algorithm two go off
+  the charts
+* [Obj file](cloche_hopital_charite.obj)
+* Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)
+* cityobject_id: 69382PUBLIC10  
+* CityGML type: building
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: gml_af20ae56-d662-4581-b17f-e7ca01101e3e  
-type: relief  
-problème: normales inversées + surfaces manquantes  
+## Terrain extract 1 (lyon_5)
 
-## extrait_2_terrain_lyon_5
+Data before treatment
 
-source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
-cityobject_id: gml_f61667a0-435c-4d2f-973b-8b6d916fa9f9  
-type: relief  
-problème: normales inversées + surfaces manquantes  
+<img src="extrait_1_terrain_lyon_5_pre_py3dtilers_scene_view.png" alt="extrait_1_terrain_lyon_5_pre_py3dtilers_scene_view" width="400"/>
+
+Data after treatment
+
+<img src="extrait_1_terrain_lyon_5_scene_view.png" alt="extrait_1_terrain_lyon_5_scene_view Post traitement" width="400"/>
+
+* Problem: inverted normals and missing surfaces/triangles
+* [Obj file](extrait_1_terrain_lyon_5_pre_py3dtilers.obj)
+* Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
+* cityobject_id: gml_af20ae56-d662-4581-b17f-e7ca01101e3e  
+* CityGML type: relief  
+
+## Terrain extract 2 (lyon_5)
+
+<img src="extrait_2_terrain_lyon_5_scene_view.png" alt="extrait_2_terrain_lyon_5_scene_view" width="400"/>
+
+* Problem: inverted normals. Too many (degenerated) triangles. Too many
+  vertices not providing geometrical information.
+* [Obj file](extrait_2_terrain_lyon_5.obj)
+* Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
+* cityobject_id: gml_38179d6d-9886-48a9-9634-4e5eb1016a06  
+* CityGML type: relief  
+
+## Terrain extract 3 (lyon_2)
+
+<img src="extrait_3_terrain_lyon_2_scene_view_a.png" alt="extrait_3_terrain_lyon_2_scene_view" width="400"/>
+
+<img src="extrait_3_terrain_lyon_2_scene_view_b.png" alt="extrait_3_terrain_lyon_2_scene_view" width="600"/>
+
+* Problem: inverted normals. Too many (degenerated) triangles. Too many
+  vertices not providing geometrical information.
+* Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
+* cityobject_id: gml_f61667a0-435c-4d2f-973b-8b6d916fa9f9  
+* CityGML type: relief  
