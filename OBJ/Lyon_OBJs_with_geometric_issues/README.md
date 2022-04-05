@@ -136,4 +136,6 @@ docker run --rm --name 3dcitydb-impexp -t --network citydb-net -e CITYDB_TYPE=po
 export PGPASSWORD=postgres
 query='SELECT COUNT(*) FROM citydb.cityobject;'
 psql -h localhost -p 5432 -U postgres -d postgres -c "$query"
+# Extract a specific building (out of its 69382PUBLIC10 id)
+docker run -i -t --rm --name impexp --network citydb-net -v $(pwd):/data 3dcitydb/impexp export-vis -H citydbTemp -d postgres -u postgres -p postgres -i 69382PUBLIC10 -l 2 -D collada -G --gltf-binary -o /data/result_building_glTf.kml
 ```
