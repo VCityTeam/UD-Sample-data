@@ -118,10 +118,11 @@ Data after treatment
 
 ## Building the 3dCityDB for running the tiler
 
-References are 
+References for docker container usages are 
 
-* [docker usage of 3dCityDB](https://3dcitydb-docs.readthedocs.io/en/latest/3dcitydb/docker.html#usage-and-configuration)
-* [docker usage of importer/exporter](https://3dcitydb-docs.readthedocs.io/en/latest/impexp/docker.html)
+* [for the 3dCityDB database itslef](https://3dcitydb-docs.readthedocs.io/en/latest/3dcitydb/docker.html#usage-and-configuration)
+* [for the importer](https://3dcitydb-docs.readthedocs.io/en/latest/impexp/docker.html)
+* [for the Visualization export](https://3dcitydb-docs.readthedocs.io/en/latest/impexp/cli/export-vis.html#impexp-cli-export-vis-command)
 
 ```bash
 # Download the data
