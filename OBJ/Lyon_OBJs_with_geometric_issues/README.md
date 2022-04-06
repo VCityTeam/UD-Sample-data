@@ -112,6 +112,7 @@ Data after treatment
 
 * Problem: inverted normals. Too many (degenerated) triangles. Too many
   vertices not providing geometrical information.
+* [Obj file](extrait_3_terrain_lyon_2.obj)
 * Source: [maquette texturée 2018](https://data.grandlyon.com/jeux-de-donnees/maquettes-3d-texturees-2018-communes-metropole-lyon/info)  
 * cityobject_id: gml_f61667a0-435c-4d2f-973b-8b6d916fa9f9  
 * CityGML type: relief  
