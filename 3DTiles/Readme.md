@@ -18,6 +18,7 @@ Created with [py3dtilers](https://github.com/VCityTeam/py3dtilers), from [this f
 `ifc-tiler --file_path chaufferie_doua.ifc --offset 0 0 -170`
 
 <img src="./Ifc_doua/ifc_doua.png" width="400"/>
+
 ## Ifc_FZK
 
 Created with [py3dtilers](https://github.com/VCityTeam/py3dtilers), from [this file](../Ifc/AC20-FZK-Haus.ifc) using this command :
